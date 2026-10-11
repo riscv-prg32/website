@@ -1,0 +1,32 @@
+- name: PRG32
+  label: Core platform
+  description: Firmware, cartridge format, developer toolchain, desktop emulator, examples, and teaching guides in one repository.
+  language: C
+  url: https://github.com/riscv-prg32/PRG32
+  featured: true
+- name: Playing with RISC-V
+  label: Textbook
+  description: A practical textbook for learning PRG32 game development in RISC-V assembly and C.
+  language: TeX
+  url: https://github.com/riscv-prg32/Playing-with-RISC-V_PRG32_textbook
+- name: Construction Kit
+  label: Visual learning
+  description: A blocks-based web application that brings retro game development to kids and young adults.
+  language: Python
+  url: https://github.com/riscv-prg32/PRG32-Construction-Kit
+- name: Cartridge Store
+  label: Distribution
+  description: An installable catalog and classroom service hub for publishing and sharing .prg32 game cartridges.
+  language: Python
+  url: https://github.com/riscv-prg32/CartridgeStore
+- name: You Have Got Pizza
+  label: Demonstrator
+  description: A Burger Time–inspired game that demonstrates the platform through a complete playable cartridge.
+  language: C++
+  url: https://github.com/riscv-prg32/YouHaveGotPizza
+- name: Terraforge
+  label: Community game
+  description: A fully playable, Minecraft-inspired game built for the PRG32 platform.
+  language: C
+  url: https://github.com/riscv-prg32/Terraforge
+

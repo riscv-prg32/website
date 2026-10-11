@@ -1,0 +1,14 @@
+title: PRG32
+description: An open-source RISC-V game programming platform for learning assembly and C by building real retro games.
+url: "https://riscv-prg32.github.io"
+baseurl: "/website"
+repository: riscv-prg32/website
+github_org: https://github.com/riscv-prg32
+permalink: pretty
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
