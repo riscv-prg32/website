@@ -13,12 +13,12 @@
   label: Visual learning
   description: A blocks-based web application that brings retro game development to kids and young adults.
   language: Python
-  url: https://github.com/riscv-prg32/PRG32-Construction-Kit
+  url: https://kit.prg32.uniparthenope.it
 - name: Cartridge Store
   label: Distribution
   description: An installable catalog and classroom service hub for publishing and sharing .prg32 game cartridges.
   language: Python
-  url: https://github.com/riscv-prg32/CartridgeStore
+  url: https://store.prg32.uniparthenope.it
 - name: You Have Got Pizza
   label: Demonstrator
   description: A Burger Time–inspired game that demonstrates the platform through a complete playable cartridge.

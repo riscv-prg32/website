@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "$0")/.." && pwd)"
+ruby_prefix="$(brew --prefix ruby@3.3 2>/dev/null || true)"
+export BUNDLE_USER_HOME="$project_dir/.bundle/user"
+
+if [[ -z "$ruby_prefix" || ! -x "$ruby_prefix/bin/bundle" ]]; then
+  echo "Homebrew Ruby 3.3 is required. Run bin/setup first." >&2
+  exit 1
+fi
+
+cd "$project_dir"
+"$ruby_prefix/bin/bundle" check >/dev/null || {
+  echo "Dependencies are missing. Run bin/setup first." >&2
+  exit 1
+}
+exec "$ruby_prefix/bin/bundle" exec jekyll build "$@"

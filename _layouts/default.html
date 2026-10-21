@@ -11,9 +11,6 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <link rel="icon" href="{{ '/assets/images/prg32-app-icon.png' | relative_url }}" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
@@ -29,9 +26,10 @@
         <a href="{{ '/#platform' | relative_url }}">Platform</a>
         <a href="{{ '/#games' | relative_url }}">Games</a>
         <a href="{{ '/#path' | relative_url }}">Get started</a>
+        <a href="https://kit.prg32.uniparthenope.it" target="_blank" rel="noopener noreferrer">Construction Kit <span aria-hidden="true">↗</span></a>
         <a href="{{ '/#projects' | relative_url }}">Projects</a>
-        <a class="nav-store" href="https://store.prg32.uniparthenope.it" target="_blank" rel="noreferrer">Cartridge Store <span aria-hidden="true">↗</span></a>
-        <a class="nav-cta" href="https://github.com/riscv-prg32" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="nav-store" href="https://store.prg32.uniparthenope.it" target="_blank" rel="noopener noreferrer">Cartridge Store <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="https://github.com/riscv-prg32" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
     <main id="main">{{ content }}</main>
@@ -39,9 +37,10 @@
       <a class="footer-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/prg32-logo.png' | relative_url }}" alt="PRG32 — Retro Gaming & Coding"></a>
       <p>Open-source RISC-V game programming.<br>Built for curiosity, classrooms, and play.</p>
       <div class="footer-links">
-        <a href="https://store.prg32.uniparthenope.it">Cartridge Store</a>
-        <a href="https://github.com/riscv-prg32">GitHub organization</a>
-        <a href="https://github.com/riscv-prg32/PRG32/blob/main/LICENSE">MIT license</a>
+        <a href="https://store.prg32.uniparthenope.it" target="_blank" rel="noopener noreferrer">Cartridge Store</a>
+        <a href="https://kit.prg32.uniparthenope.it" target="_blank" rel="noopener noreferrer">Construction Kit</a>
+        <a href="https://github.com/riscv-prg32" target="_blank" rel="noopener noreferrer">GitHub organization</a>
+        <a href="https://github.com/riscv-prg32/PRG32/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT license</a>
         <a href="{{ '/privacy-policy/' | relative_url }}">Privacy policy</a>
         <a href="mailto:raffaele.montella@uniparthenope.it">Contact</a>
       </div>

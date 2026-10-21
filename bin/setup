@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "$0")/.." && pwd)"
+ruby_prefix="$(brew --prefix ruby@3.3 2>/dev/null || true)"
+export BUNDLE_USER_HOME="$project_dir/.bundle/user"
+
+if [[ -z "$ruby_prefix" || ! -x "$ruby_prefix/bin/bundle" ]]; then
+  echo "Homebrew Ruby 3.3 is required. Install it with: brew install ruby@3.3" >&2
+  exit 1
+fi
+
+cd "$project_dir"
+"$ruby_prefix/bin/bundle" config set --local path vendor/bundle
+"$ruby_prefix/bin/bundle" install
